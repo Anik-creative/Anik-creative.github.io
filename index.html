@@ -32,7 +32,7 @@
       border-bottom: 1px solid var(--line);
     }
     nav { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-    .logo { font-weight: 800; letter-spacing: -.06em; font-size: 21px; }
+    .logo { font-weight: 800; letter-spacing: -.04em; font-size: 17px; white-space: nowrap; }
     .logo span { display: inline-block; width: 9px; height: 9px; background: var(--accent); border-radius: 50%; margin-left: 3px; }
     .navlinks { display: flex; gap: 28px; color: #555; font-size: 13px; }
     .navlinks a:hover, .text-link:hover { color: #777; }
@@ -80,7 +80,7 @@
     @media (max-width: 700px) {
       .wrap { width: min(100% - 32px, var(--max)); }
       nav { min-height: 66px; }
-      .navlinks { gap: 13px; font-size: 11px; }
+      .logo { font-size: 12px; }\n      .navlinks { gap: 9px; font-size: 10px; }
       .hero { padding: 82px 0 70px; }
       .hero-bottom, .section-head, .contact { align-items: flex-start; flex-direction: column; }
       section { padding: 62px 0; }
@@ -95,7 +95,7 @@
 <body>
   <header>
     <nav class="wrap">
-      <a class="logo" href="#home">ANIK<span></span></a>
+      <a class="logo" href="#home">Abdullah Bin Alam Anik<span></span></a>
       <div class="navlinks">
         <a href="#work">Work</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a>
       </div>
