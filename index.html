@@ -37,6 +37,9 @@
     .navlinks { display: flex; gap: 28px; color: #c4c8bf; font-size: 13px; }
     .navlinks a:hover, .text-link:hover { color: var(--accent); }
     .hero { padding: 112px 0 100px; }
+    .hero-layout { display: flex; align-items: center; justify-content: space-between; gap: 56px; }
+    .hero-content { flex: 1; min-width: 0; }
+    .profile-photo { width: clamp(190px, 25vw, 290px); aspect-ratio: 1; flex: 0 0 auto; object-fit: cover; object-position: center; border-radius: 50%; border: 3px solid var(--accent); box-shadow: 0 0 0 10px rgba(27,71,255,.10), 0 0 42px rgba(27,71,255,.22); }
     .eyebrow { text-transform: uppercase; letter-spacing: .16em; font-size: 11px; font-weight: 700; color: var(--muted); }
     h1 { max-width: 900px; margin: 22px 0; font-size: clamp(46px, 8vw, 90px); line-height: .99; letter-spacing: -.075em; font-weight: 750; }
     h1 em { font-style: normal; color: #858b81; }
@@ -89,6 +92,8 @@
       .logo { font-size: 12px; }
       .navlinks { gap: 9px; font-size: 10px; }
       .hero { padding: 82px 0 70px; }
+      .hero-layout { flex-direction: column-reverse; align-items: flex-start; gap: 34px; }
+      .profile-photo { width: 190px; align-self: center; }
       .hero-bottom, .section-head, .contact { align-items: flex-start; flex-direction: column; }
       section { padding: 62px 0; }
       .projects { grid-template-columns: 1fr; gap: 28px; }
@@ -112,11 +117,16 @@
   <main>
     <section class="hero" id="home" style="border:0">
       <div class="wrap">
-        <div class="eyebrow">Independent Graphic Designer · Bangladesh</div>
-        <h1>Designing ideas<br>into <em>visual stories.</em></h1>
-        <div class="hero-bottom">
-          <p class="intro">Hello, I'm Abdullah Bin Alam Anik. I create thoughtful visual identities and engaging designs that help brands communicate with clarity and character.</p>
-          <a class="button" href="#work">Explore my work <span>↘</span></a>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <div class="eyebrow">Independent Graphic Designer · Bangladesh</div>
+            <h1>Designing ideas<br>into <em>visual stories.</em></h1>
+            <div class="hero-bottom">
+              <p class="intro">Hello, I'm Abdullah Bin Alam Anik. I create thoughtful visual identities and engaging designs that help brands communicate with clarity and character.</p>
+              <a class="button" href="#work">Explore my work <span>↘</span></a>
+            </div>
+          </div>
+          <img class="profile-photo" src="images/Profile%20Picture.jpg" alt="Abdullah Bin Alam Anik profile photo">
         </div>
       </div>
     </section>
